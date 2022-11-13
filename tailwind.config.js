@@ -7,6 +7,7 @@ module.exports = {
         TextBlack: "#434343",
         FooterBgColor: "#1D1D1E",
         FooterTextColor: "#F1F3F9",
+        TextPink: "#A02279",
       },
       backgroundImage: {
         ButtonBgColor: "linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%)",
