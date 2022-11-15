@@ -64,7 +64,7 @@ const Footer = () => {
           }`}
         >
           <h3 className="font-bold text-[#FFFFFF] text-[18px]">{item.title}</h3>
-          <div className="flex flex-col gap-[6px] text-FooterTextColor text-[14px] font-normal NotLaptop:flex-row NotLaptop:gap-8 AllPhones:break-words">
+          <div className="flex flex-col gap-[6px] text-FooterTextColor text-[14px] font-normal NotLaptop:flex-row NotLaptop:gap-8 AllPhones:break-words Phones:text-[12px] VerySmallPhones:text-[12px]">
             <p>{item.p1}</p>
             <p>{item.p2}</p>
             <p>{item.p3}</p>

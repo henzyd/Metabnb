@@ -16,11 +16,19 @@ module.exports = {
         SmallPhones: { min: " 220px", max: "380px" },
         // => @media (min-width: 320px) { ... }
 
+        VerySmallPhones: { max: "338.9px" },
+
         RangeForPhone: { min: "200px", max: "1023px" },
         // => @media (min-width: 200px) and (max-width:1023px) { ... }
 
-        // MediumPhones: "375px",
+        MediumPhones: { min: "320px", max: "375.9px" },
         // // => @media (min-width: 375px) { ... }
+
+        Phone1: { max: "640px" },
+        Phone2: { min: "640px", max: "746px" },
+
+        Phones: { min: "338px", max: "425.9px" },
+        InbetweenPhone: { min: "426px", max: "560px" },
 
         AllPhones: { max: "767px" },
 

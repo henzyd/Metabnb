@@ -30,8 +30,8 @@ const NavBar = ({ setModalVisible, modalVisible }) => {
   // modal = modalVisible;
   return (
     <>
-      <div className="flex items-center justify-between p-3 px-12 w-full Tablet:px-24 AllPhones:px-8 AllPhones:py-8 NotLaptop:sticky NotLaptop:z-10 NotLaptop:top-0 NotLaptop:bg-white">
-        <Link className="w-40" to={"/"}>
+      <div className="flex items-center justify-between p-3 px-12 w-full Tablet:px-24 AllPhones:px-8 AllPhones:py-8 NotLaptop:sticky NotLaptop:z-10 NotLaptop:top-0 NotLaptop:bg-white NotLaptop:py-8 ">
+        <Link className="VerySmallPhones:w-[120px] w-40 " to={"/"}>
           <img className="w-full" src={Logo} alt="" />
         </Link>
         <ul className="flex items-center gap-9 NotLaptop:hidden">
@@ -63,7 +63,7 @@ const NavBar = ({ setModalVisible, modalVisible }) => {
           onClick={mobileToggleModal}
         >
           <FiMenu
-            className="w-[2.2rem] h-[2.2rem] fill-TextBlack"
+            className="w-[2.2rem] h-[2.2rem] VerySmallPhones:w-[1.6rem] VerySmallPhones:h-[1.6rem] fill-TextBlack"
             stroke="#434343"
           />
         </button>
@@ -77,15 +77,15 @@ const NavBar = ({ setModalVisible, modalVisible }) => {
         className={`NotPhonesOrTablet:hidden bg-[#4040404D] h-[100%] w-full absolute z-20 flex justify-end top-0 ${hidden}`}
       >
         <div
-          className={`w-[70%] h-[100vh] bg-white sticky top-0 ${translate} p-16 flex flex-col`}
+          className={`w-[70%] h-[100vh] bg-white sticky top-0 ${translate} p-16 flex flex-col Phones:p-10 VerySmallPhones:p-10 `}
         >
           <img
-            className="mb-16 w-8 h-8"
+            className="mb-16 w-8 h-8 cursor-pointer Phones:w-7 Phones:h-7 VerySmallPhones:w-7 VerySmallPhones:h-7"
             onClick={mobileToggleModal}
             src={X}
             alt=""
           />
-          <ul className="flex items-center gap-9 flex-col">
+          <ul className="flex items-center gap-9 flex-col Phones:text-[14px] VerySmallPhones:text-[14px]">
             <li>
               <Link to={"/"} onClick={mobileToggleModal}>
                 <p className="text-TextBlack">Home</p>
@@ -104,7 +104,7 @@ const NavBar = ({ setModalVisible, modalVisible }) => {
             </li>
           </ul>
           <button
-            className="p-3 px-5 text-white rounded-[10px] text-sm bg-ButtonBgColor outline-0 w-fit self-center mt-10"
+            className="p-3 px-5 text-white rounded-[10px] text-sm bg-ButtonBgColor outline-0 w-fit self-center mt-10 Phones:text-[14px] VerySmallPhones:text-[14px]"
             onClick={toggleModal}
           >
             Connect Wallet
