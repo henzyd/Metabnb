@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Logo from "../icons/Logo.svg";
 import { FiMenu } from "react-icons/fi";
 import X from "../icons/modal x.svg";
-import { BsChevronDown } from "react-icons/bs";
+// import { BsChevronDown } from "react-icons/bs";
 
 const NavBar = ({ setModalVisible, modalVisible }) => {
   const [hidden, setHidden] = useState("hidden");
@@ -12,7 +12,7 @@ const NavBar = ({ setModalVisible, modalVisible }) => {
     console.log(modalVisible);
 
     if (modalVisible === "hidden") {
-      setModalVisible("block");
+      setModalVisible("grid");
     } else {
       setModalVisible("hidden");
     }
@@ -68,8 +68,13 @@ const NavBar = ({ setModalVisible, modalVisible }) => {
           />
         </button>
       </div>
+
+      {/*  */}
+      {/*  */}
+      {/*  */}
+
       <div
-        className={`NotPhonesOrTablet:hidden bg-[#4040404D] h-[100%] w-full absolute z-20 flex justify-end top-0 ${hidden} `}
+        className={`NotPhonesOrTablet:hidden bg-[#4040404D] h-[100%] w-full absolute z-20 flex justify-end top-0 ${hidden}`}
       >
         <div
           className={`w-[70%] h-[100vh] bg-white sticky top-0 ${translate} p-16 flex flex-col`}

@@ -34,8 +34,8 @@
   }
 }
 
-#parent {
-  position: fixed;
+/* #parent {
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -54,4 +54,4 @@
   left: 50%;
   background-color: #fff;
   transform: translateX(-50%) translateY(-50%);
-}
+} */
