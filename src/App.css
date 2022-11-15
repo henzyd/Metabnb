@@ -18,3 +18,40 @@
   display: flex;
   justify-content: center;
 } */
+
+.App {
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+#forth-section {
+  grid-template-columns: 1.5fr 2.5fr;
+}
+
+@media (max-width: 1023.9px) {
+  #forth-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+#parent {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border: 8px solid red;
+}
+
+.child {
+  width: 500px;
+  height: 500px;
+  position: fixed;
+  border: 4px solid yellow;
+  top: 50%;
+  left: 50%;
+  background-color: #fff;
+  transform: translateX(-50%) translateY(-50%);
+}

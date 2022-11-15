@@ -22,14 +22,21 @@ module.exports = {
         // MediumPhones: "375px",
         // // => @media (min-width: 375px) { ... }
 
+        AllPhones: { max: "767px" },
+
         LargePhones: { min: "425px", max: "767px" },
         // => @media (min-width: 425px) { ... }
 
-        Tablet: { min: "768px", max: "1023px" },
+        TabletIN: { min: "768px", max: "871px" },
+        Tablet: { min: "768px", max: "1023.9px" },
         // => @media (min-width: 768px) { ... }
+        NotLaptop: { max: "1023.9px" },
+        NotPhonesOrTablet: { min: "1024px" },
 
+        LaptopButINB: { min: "1024px", max: "1199px" },
         Laptop: { min: "1024px", max: "1439px" },
         // => @media (min-width: 1024px) { ... }
+        LaptopAlmost: { min: "1200px", max: "1439px" },
 
         LargeLaptop: "1440px",
         // => @media (min-width: 1440px) { ... }

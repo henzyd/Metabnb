@@ -9,7 +9,7 @@ const LandingPage = () => {
   console.log(modalVisible);
 
   return (
-    <div className="">
+    <div className=" overflow-x-hidden relative">
       <NavBar setModalVisible={setModalVisible} modalVisible={modalVisible} />
       <Outlet />
       <Footer />

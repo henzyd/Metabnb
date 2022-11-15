@@ -92,8 +92,8 @@ const PlaceToStay = () => {
     },
   ];
   return (
-    <div style={{ width: "100%" }} className="flex flex-col ">
-      <div className="flex w-full items-center justify-start gap-14 p-12 py-4 mt-7 text-[16px] text-TextBlack">
+    <div style={{ width: "100%" }} className="flex flex-col items-center">
+      <div className="flex w-full items-center justify-start gap-14 p-12 py-4 mt-7 text-[16px] text-TextBlack LaptopButINB:gap-8 LaptopButINB:text-[14px] Laptop:gap-10 NotLaptop:hidden">
         <p>Resturant</p>
         <p>Cottage</p>
         <p>Castle</p>
@@ -107,9 +107,9 @@ const PlaceToStay = () => {
           <img src={Setting} alt="" />
         </div>
       </div>
-      <div className="grid grid-cols-4 items-center gap-6 p-24 py-9 mb-9">
+      <div className="grid grid-cols-4 place-content-center gap-6 mb-9 py-9 AllPhones:grid-cols-1 Tablet:grid-cols-2">
         {" "}
-        {/* p-[7.45%] */}
+        {/* p-24 py-9*/} {/* p-[7.45%] */}
         {NFTData.map((item) => (
           <NFTCard key={item.id} item={item} />
         ))}

@@ -33,10 +33,10 @@ const Footer = () => {
     },
   ];
   return (
-    <footer className="w-full bg-FooterBgColor p-6 px-20 flex justify-between">
-      <div className="flex flex-col gap-12">
-        <img className="w-60" src={LogoNoColor} alt="" />
-        <div className="flex items-center gap-10 mt-8">
+    <footer className="w-full bg-FooterBgColor p-6 px-20 flex justify-between TabletIN:px-16 NotLaptop:flex-col NotLaptop:gap-6 AllPhones:px-8">
+      <div className="flex flex-col gap-12 NotLaptop:gap-6">
+        <img className="w-60 NotLaptop:inline-block" src={LogoNoColor} alt="" />
+        <div className="flex items-center gap-10 mt-6">
           <img src={FooterFB} alt="" />
           <img src={FooterInsta} alt="" />
           <img src={FooterTwitter} alt="" />
@@ -59,10 +59,12 @@ const Footer = () => {
       {footerData.map((item) => (
         <div
           key={item.id}
-          className={`flex flex-col gap-3 ${item.id === 3 && "pr-24"}`}
+          className={`flex flex-col gap-3 ${
+            item.id === 3 && "pr-24 NotLaptop:pr-0"
+          }`}
         >
           <h3 className="font-bold text-[#FFFFFF] text-[18px]">{item.title}</h3>
-          <div className="flex flex-col gap-[6px] text-FooterTextColor text-[14px] font-normal">
+          <div className="flex flex-col gap-[6px] text-FooterTextColor text-[14px] font-normal NotLaptop:flex-row NotLaptop:gap-8 AllPhones:break-words">
             <p>{item.p1}</p>
             <p>{item.p2}</p>
             <p>{item.p3}</p>
