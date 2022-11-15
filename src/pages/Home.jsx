@@ -13,10 +13,10 @@ import SImage5 from "../images/home-second-section-imgs/S - image 5.png";
 import SImage6 from "../images/home-second-section-imgs/S - image 6.png";
 import SImage7 from "../images/home-second-section-imgs/S - image 7.png";
 import SImage8 from "../images/home-second-section-imgs/S - image 8.png";
-import FImage1 from "../images/home-second-section-imgs/F - image 1.png";
-import FImage2 from "../images/home-second-section-imgs/F - image 2.png";
-import FImage3 from "../images/home-second-section-imgs/F - image 3.png";
-import FCombo from "../images/home-second-section-imgs/F - Combo.png";
+// import FImage1 from "../images/home-third-section-imgs/F - image 1.png";
+// import FImage2 from "../images/home-third-section-imgs/F - image 2.png";
+// import FImage3 from "../images/home-third-section-imgs/F - image 3.png";
+import FCombo from "../images/home-third-section-imgs/F - Combo.png";
 
 // Icons
 import HomeFirstSection1 from "../icons/HomeFirstSection-1.svg";

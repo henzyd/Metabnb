@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap");
 
 @font-face {
   font-family: AirbnbCereal_W_Bd;
@@ -12,3 +13,8 @@
   box-sizing: border-box;
   font-family: "Red Rose", cursive;
 }
+
+/* body {
+  display: flex;
+  justify-content: center;
+} */

@@ -6,7 +6,7 @@ import PlaceToStay from "./pages/PlaceToStay";
 
 function App() {
   return (
-    <div className="App w-full">
+    <div className="App relative" style={{ maxWidth: "1440px" }}>
       <Routes>
         <Route path="/" element={<LandingPage />}>
           <Route index element={<Home />} />
