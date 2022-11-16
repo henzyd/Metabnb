@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Logo from "../icons/Logo.svg";
 import { FiMenu } from "react-icons/fi";
 import X from "../icons/modal x.svg";
+
 // import { BsChevronDown } from "react-icons/bs";
 
 const NavBar = ({ setModalVisible, modalVisible }) => {

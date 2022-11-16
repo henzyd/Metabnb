@@ -5,6 +5,7 @@ import NFTCard from "../components/NFTCard";
 
 // ICON
 import Setting from "../icons/setting.svg";
+// import { HiMenuAlt2 } from "react-icons/hi";
 
 // IMAGES
 import SImage1 from "../images/home-second-section-imgs/S - image 1.png";
@@ -93,6 +94,28 @@ const PlaceToStay = () => {
   ];
   return (
     <div style={{ width: "100%" }} className="flex flex-col items-center">
+      <div className="flex items-center justify-between px-12 w-full Tablet:px-24 AllPhones:px-8 NotLaptop:sticky NotLaptop:z-10 NotLaptop:top-0 NotLaptop:bg-white NotPhonesOrTablet:hidden border-t border-b py-2">
+        {/* <button className="outline-0 NotPhonesOrTablet:hidden">
+          <HiMenuAlt2
+            className="w-[2.2rem] h-[2.2rem] VerySmallPhones:w-[1.6rem] VerySmallPhones:h-[1.6rem] fill-TextBlack"
+            stroke="#434343"
+          />
+        </button> */}
+        <div className="flex w-full items-center gap-14 font-normal text-[12px] overflow-x-scroll shadow-[20px 20px 50px 10px pink inset]">
+          <p>Resturant</p>
+          <p>Cottage</p>
+          <p>Castle</p>
+          <p>fantast city</p>
+          <p>beach</p>
+          <p>Carbins</p>
+          <p>Off-grid</p>
+          <p>Farm</p>
+          <div className="flex items-center gap-8 p-3 pr-8 border border-[#B4B4B4] rounded-[8px]">
+            <p>Location</p>
+            <img className="" src={Setting} alt="" />
+          </div>
+        </div>
+      </div>
       <div className="flex w-full items-center justify-start gap-14 p-12 py-4 mt-7 text-[16px] text-TextBlack LaptopButINB:gap-8 LaptopButINB:text-[14px] Laptop:gap-10 NotLaptop:hidden">
         <p>Resturant</p>
         <p>Cottage</p>
